@@ -7,7 +7,9 @@ import Login from './screens/Login';
 import Contact from './screens/Contact';
 import About from './screens/About';
 import NavBar from './componentes/NavBar';
-import Register from './screens/Register';    
+import Register from './screens/Register'; 
+import Store from './screens/Store';
+
 
  
 function App() {
@@ -24,6 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path='/about' element={<About />} />
             <Route path='/register' element={<Register/>} /> 
+            <Route path='/loja' element={<Store/>} />
           </Routes>
         </div>
       </BrowserRouter>

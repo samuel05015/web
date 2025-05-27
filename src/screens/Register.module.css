@@ -1,62 +1,119 @@
-/* Estilos gerais */
 .container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  align-items: center;
 }
 
-/* Título */
-h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-/* Estilos para o formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.header h2 {
+  font-size: 1.8rem;
+  color: #2d3436;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
-/* Estilos para os rótulos e inputs */
-label {
-    display: flex;
-    flex-direction: column;
+.header p {
+  color: #636e72;
+  font-size: 0.95rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  
+}
+
+.formGroup {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.inputField {
+    width: 100%;
+    padding: 12px 16px;
     font-size: 14px;
-    color: #666;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
 }
 
-input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 5px;
-    outline: none;
+.inputField:focus {
+  outline: none;
+  border-color: #0984e3;
+  box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.1);
+  background-color: #fff;
+  align-items: center;
 }
 
-input:focus {
-    border-color: #007BFF;
+.inputField::placeholder {
+  color: #b2bec3;
+  align-items: center;
+
 }
 
-/* Botão de cadastro */
-.btnCadastrar {
-    padding: 15px 30px; /* Aumentando o padding */
-    font-size: 18px; /* Aumentando o tamanho da fonte */
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.submitButton {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #e17055, #d63031);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
 }
 
-.btnCadastrar:hover {
-    background-color: black;
+.submitButton:hover {
+  background: linear-gradient(135deg, #d63031, #e17055);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(214, 48, 49, 0.2);
 }
 
+.submitButton:disabled {
+  background: #b2bec3;
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: #d63031;
+  background-color: rgba(214, 48, 49, 0.1);
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.loginLink {
+  text-align: center;
+  color: #636e72;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.loginLink a {
+  color: #0984e3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.loginLink a:hover {
+  text-decoration: underline;
+}
